@@ -10,38 +10,15 @@ library(Lahman)
 
 ```{r}
 Batting |>
-  group_by(playerID) |>
-  summarise(
-    career_home_runs = sum(HR, na.rm = TRUE),
-    first_year = min(yearID),
-    last_year = max(yearID),
-    .groups = "drop"
-  ) |>
-  arrange(desc(career_home_runs)) |>
-  slice_head(n = 15) |>
-  left_join(
-    People |> select(playerID, nameFirst, nameLast),
-    by = "playerID"
-  ) |>
-  mutate(
-    player = str_c(nameFirst, nameLast, sep = " "),
-    active_steroid_era = if_else(
-      last_year >= 1994 & first_year <= 2009,
-      "Yes",
-      "No"
-    )
-  ) |>
-  ggplot(aes(
-    x = career_home_runs,
-    y = fct_reorder(player, career_home_runs),
-    fill = active_steroid_era
-  )) +
-  geom_col() +
+  filter(playerID == "bondsba01") |>
+  group_by(yearID) |>
+  summarise(home_runs = sum(HR), .groups = "drop") |>
+  ggplot(aes(x = yearID, y = home_runs)) +
+  geom_col(fill = "steelblue") +
   labs(
-    title = "Career Home Run Leaders",
-    x = "Career home runs",
-    y = "Player",
-    fill = "Active during steroid era",
+    title = "Barry Bonds' Home Runs by Season",
+    x = "Season",
+    y = "Home runs",
     caption = "Source: Lahman database"
   )
 ```
