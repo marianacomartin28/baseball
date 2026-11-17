@@ -2,4 +2,6 @@
 title: "Baseball Through the Numbers"
 ---
 
-Explore the history of Major League Baseball through its data, using the Lahman database. From players and teams to seasons and records, this site uncovers stories in the numbers.
+Using the Lahman database, this site explores Major League Baseball's home-run history. Comparing home runs per team-game makes seasons of different lengths easier to compare; the rate varies across baseball history, with shortened seasons marked for context.
+
+The career-leader analysis puts Barry Bonds at the top with 762 home runs, and his season-by-season chart shows how his total accumulated. Use the analysis pages in the navbar to explore the home-run trends and player charts.
