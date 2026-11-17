@@ -19,5 +19,12 @@
     "title": "Home runs",
     "section": "Season comparison",
     "text": "Season comparison\n\n\n# A tibble: 4 × 4\n  yearID total_home_runs total_team_games home_runs_per_game\n   &lt;int&gt;           &lt;int&gt;            &lt;int&gt;              &lt;dbl&gt;\n1   1981            1781             2788              0.639\n2   1994            3306             3200              1.03 \n3   2019            6776             4858              1.39 \n4   2020            2304             1796              1.28"
+  },
+  {
+    "objectID": "sluggers.html",
+    "href": "sluggers.html",
+    "title": "Sluggers",
+    "section": "",
+    "text": "# A tibble: 15 × 3\n   Player           `Career home runs` `Seasons played`\n   &lt;chr&gt;                         &lt;int&gt; &lt;chr&gt;           \n 1 Barry Bonds                     762 1986-2007       \n 2 Hank Aaron                      755 1954-1976       \n 3 Babe Ruth                       714 1914-1935       \n 4 Albert Pujols                   703 2001-2022       \n 5 Alex Rodriguez                  696 1994-2016       \n 6 Willie Mays                     660 1948-1973       \n 7 Ken Griffey                     630 1989-2010       \n 8 Jim Thome                       612 1991-2012       \n 9 Sammy Sosa                      609 1989-2007       \n10 Frank Robinson                  586 1956-1976       \n11 Mark McGwire                    583 1986-2001       \n12 Harmon Killebrew                573 1954-1975       \n13 Rafael Palmeiro                 569 1986-2005       \n14 Reggie Jackson                  563 1967-1987       \n15 Manny Ramirez                   555 1993-2011"
   }
 ]
